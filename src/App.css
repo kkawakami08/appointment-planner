@@ -6,11 +6,18 @@
   --main-color-light: #AB92BF;
   --white: #FBFBFB;
   --black: #08090A;
-  color: var(--white);
   background-color: var(--main-color-light);
+}
+
+body {
+  color: var(--white);
 }
 
 h1 {
   letter-spacing: 2px;
   font-size: 2em;
+}
+
+.active {
+  color: var(--main-color-light);
 }
