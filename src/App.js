@@ -33,12 +33,20 @@ function App() {
       id: 4
     }
   ])
+  const [appointments, setAppointments] = useState([
+    {
+      name: "Lola",
+      date: "05/15/23",
+      time: "10:00 AM"
+    }
+  ])
   return (
     <Router>
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage
           contacts={contacts}
+          appointments={appointments}
         />} />
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/appointment" element={<AppointmentPage/>} />
