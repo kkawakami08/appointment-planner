@@ -1,0 +1,18 @@
+form h2 {
+  color: var(--main-color-dark);
+}
+
+input {
+  height: 3em;
+  border-radius: 1em;
+  border: none;
+  padding: 0 2em;
+  width: 60%;
+  background-color: #ede8e8d2;
+}
+
+.new-contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+}

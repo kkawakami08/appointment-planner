@@ -5,7 +5,7 @@ export default function HomePage({contacts,appointments}) {
   return (
     <div className="home-container">
       <div className="card">
-        <div className="card-header">
+        <div className="header">
           <h2>Recent Contacts</h2>
           <hr />
         </div>
@@ -18,8 +18,8 @@ export default function HomePage({contacts,appointments}) {
          </div>
         })}
       </div>
-      <div className="card" id="appt">
-        <div className='card-header' >
+      <div className="card">
+        <div className='header' >
           <h2 >Next Appointment</h2>
           <hr />
         </div>

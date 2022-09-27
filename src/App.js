@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './NavBar/NavBar';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import ContactPage from './Pages/ContactPage';
+import ContactPage from './Pages/ContactPage/ContactPage';
 import AppointmentPage from './Pages/AppointmentPage';
 import HomePage from './Pages/HomePage/HomePage';
 import {useState} from 'react';
