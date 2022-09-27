@@ -48,7 +48,7 @@ function App() {
           contacts={contacts}
           appointments={appointments}
         />} />
-        <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/contact" element={<ContactPage setContacts={setContacts}/>} />
         <Route path="/appointment" element={<AppointmentPage/>} />
       </Routes>
     </Router>

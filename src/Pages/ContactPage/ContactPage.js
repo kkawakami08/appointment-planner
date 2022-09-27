@@ -1,7 +1,7 @@
 import React from 'react'
 import './ContactPage.css';
 
-export default function () {
+export default function ContactPage ({setContacts}) {
   return (
     <div className="new-contact-container">
       <form className="card">
