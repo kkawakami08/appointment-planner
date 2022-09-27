@@ -1,0 +1,42 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 8em 0;
+}
+
+.card {
+  background-color: var(--white);
+  width: 33%;
+  /* height: 25em; */
+  border-radius: 1em;
+  color: var(--main-color-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 2em 0;
+}
+
+hr {
+  width: 60%;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  align-items: center;
+  width: 60%;
+  background-color: #ede8e8d2;
+  border-radius: 1em;
+  padding: 1em 0;
+
+}
+
+.contact h4 {
+  font-weight: 400;
+}
