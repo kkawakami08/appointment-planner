@@ -9,7 +9,7 @@ export default function NavBar() {
         <NavLink to="/contact">
          <li>View/Add Contacts</li>
         </NavLink>
-        <NavLink to="/contact" activeClassName="active">
+        <NavLink to="/appointment">
           <li>View/Add Appointments</li>
         </NavLink>
       </ul>

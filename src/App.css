@@ -6,11 +6,11 @@
   --main-color-light: #AB92BF;
   --white: #FBFBFB;
   --black: #08090A;
-  background-color: var(--main-color-light);
 }
 
 body {
   color: var(--white);
+  background-color: var(--main-color-light);
 }
 
 h1 {
@@ -18,6 +18,31 @@ h1 {
   font-size: 2em;
 }
 
-.active {
+a {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 500;
   color: var(--main-color-light);
+}
+
+a:hover {
+  color: var(--main-color-dark);
+}
+
+ul {
+  display: flex;
+  gap: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--main-color-dark);
+}
+
+.active {
+  color: var(--black);
 }
