@@ -14,24 +14,7 @@ function App() {
       email: "kk@gmail.com",
       id: 1
     },
-    {
-      name: "Michael Q",
-      phone: "444-444-4444",
-      email: "mq@gmail.com",
-      id: 2
-    },
-    {
-      name: "Michael Q",
-      phone: "444-444-4444",
-      email: "mq@gmail.com",
-      id: 3
-    },
-    {
-      name: "Michael Q",
-      phone: "444-444-4444",
-      email: "mq@gmail.com",
-      id: 4
-    }
+    
   ])
   const [appointments, setAppointments] = useState([
     {
@@ -48,7 +31,9 @@ function App() {
           contacts={contacts}
           appointments={appointments}
         />} />
-        <Route path="/contact" element={<ContactPage setContacts={setContacts}/>} />
+        <Route path="/contact" element={<ContactPage 
+          contacts={contacts}
+          setContacts={setContacts}/>} />
         <Route path="/appointment" element={<AppointmentPage/>} />
       </Routes>
     </Router>
