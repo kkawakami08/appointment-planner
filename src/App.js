@@ -7,21 +7,14 @@ import HomePage from './Pages/HomePage/HomePage';
 import {useState} from 'react';
 
 function App() {
-  const [contacts, setContacts] = useState([
-    {
-      name: "Kaori Kawakami",
-      phone: "744-444-4444",
-      email: "kk@gmail.com",
-      id: 1
-    },
-    
-  ])
+  const [contacts, setContacts] = useState([])
   const [appointments, setAppointments] = useState([
     {
       name: "Lola",
       date: "05/15/23",
-      time: "10:00 AM"
-    }
+      time: "10:00 AM",
+      id: 1
+    },
   ])
   return (
     <Router>
@@ -34,7 +27,10 @@ function App() {
         <Route path="/contact" element={<ContactPage 
           contacts={contacts}
           setContacts={setContacts}/>} />
-        <Route path="/appointment" element={<AppointmentPage/>} />
+        <Route path="/appointment" element={<AppointmentPage/>} 
+          appointments={appointments}
+          setAppointments={setAppointments}
+        />
       </Routes>
     </Router>
   );

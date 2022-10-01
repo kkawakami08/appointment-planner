@@ -5,13 +5,15 @@ export default function ContactPage ({contacts, setContacts}) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setContacts([...contacts, {
       name: name,
       phone: phone,
-      email: email
+      email: email,
+      id: Math.random()*1000
     }])
     setName("");
     setPhone("");
